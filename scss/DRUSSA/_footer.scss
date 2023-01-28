@@ -1,0 +1,43 @@
+footer{
+  background-color:rgba(104, 101, 101, 0.449);
+  color: rgb(15, 15, 15);
+  
+  
+ p{
+
+display: flex;
+justify-content: end;
+align-items: center;
+
+
+ }
+
+ .contenedor-footer{
+ 
+ }
+ .contenedor_iconfooter{
+
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   padding: 10px;  
+  
+ img{
+
+  height: 20px;
+  width: 10;
+  margin: 10px;
+
+
+  
+
+ 
+  &:hover{
+    background-color: rgb(89, 216, 248);
+    border-radius: 10px;
+  
+  }
+
+ }
+}
+}

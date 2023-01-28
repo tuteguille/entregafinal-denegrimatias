@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+main .contenedore_principal img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  padding: 10px; }
+
+main .contenedore_principal h3 {
+  text-align: center;
+  color: grey; }
+
+main h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: gray; }
+
+main .contenedor_slide {
+  width: 100;
+  height: 80vh;
+  margin: 0;
+  overflow: hidden; }
+  main .contenedor_slide ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 15s infinite;
+    animation-direction: alternate; }
+  main .contenedor_slide li {
+    width: 200%;
+    list-style: none; }
+  main .contenedor_slide img {
+    width: 100%;
+    height: 100%; }
+  main .contenedor_slide h2 {
+    text-align: center;
+    color: grey; }
+
+#temporada {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center; }
+  #temporada img {
+    border-radius: 100%;
+    width: 100px; }
+  #temporada div {
+    padding: 20px 20px; }
+  #temporada h4 {
+    color: #59d8f8;
+    padding: 10px;
+    font-size: 20px; }
+  #temporada p {
+    font-size: 16px;
+    color: grey; }
+  #temporada .boton-temporada {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    border: 2px solid #59d8f8;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s; }
+    #temporada .boton-temporada:hover {
+      background-color: rgba(26, 24, 24, 0.052);
+      color: #59d8f8; }
+
+#servicios {
+  padding: 0px 50px;
+  background-color: #59d8f8; }
+  #servicios .contenedor-servicios {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; }
+    #servicios .contenedor-servicios i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      #servicios .contenedor-servicios i:hover {
+        color: white; }
+    #servicios .contenedor-servicios div {
+      flex: 1;
+      margin: 20px 0px;
+      border-right: 2px solid grey; }
+    #servicios .contenedor-servicios #icono-atencion {
+      border: none; }
+    #servicios .contenedor-servicios h6 {
+      color: grey;
+      font-size: 15px;
+      font-weight: 150;
+      margin: 10px 0px; }
+  #servicios .boton-contactanos {
+    text-decoration: none;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px;
+    color: white; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -150%; }
+  45% {
+    margin-left: -150%; }
+  50% {
+    margin-left: -300%; }
+  70% {
+    margin-left: -300%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+footer {
+  background-color: rgba(104, 101, 101, 0.449);
+  color: #0f0f0f; }
+  footer p {
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+  footer .contenedor_iconfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    footer .contenedor_iconfooter img {
+      height: 20px;
+      width: 10;
+      margin: 10px; }
+      footer .contenedor_iconfooter img:hover {
+        background-color: #59d8f8;
+        border-radius: 10px; }
+
+nav {
+  width: 100%;
+  height: 14vh;
+  margin: 0;
+  color: black;
+  box-sizing: 0; }
+  nav .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+  nav .nav__label, nav .nav__input {
+    display: none; }
+  nav .nav__logo {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10px; }
+    nav .nav__logo:hover {
+      color: #59d8f8; }
+  nav img {
+    width: 100%;
+    height: 40px;
+    margin: 0; }
+  nav .nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    margin: 0; }
+  nav .nav__link {
+    color: black;
+    text-decoration: none; }
+    nav .nav__link:hover {
+      color: #59d8f8; }
+
+@media screen and (max-width: 768px) {
+  nav .nav__label {
+    display: block;
+    cursor: pointer; }
+  nav .nav__menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+  nav .nav__input:checked + .nav__menu {
+    clip-path: circle(100% at center);
+    background-color: #55595a; }
+  main #temporada {
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 50%; }
+    main #temporada h4 {
+      font-size: 18px; }
+    main #temporada p {
+      font-size: 15px; }
+  #servicios .contenedor-servicios {
+    flex-direction: column; }
+    #servicios .contenedor-servicios div {
+      border: none; } }

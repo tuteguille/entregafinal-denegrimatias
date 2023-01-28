@@ -1,0 +1,64 @@
+    
+  nav{
+        
+    width:100% ;
+     height: 14vh;
+     margin: 0;
+     color: black;
+     box-sizing: 0;
+
+
+     
+     
+     .nav__container{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 100%;
+         width: 100%;
+         
+       
+     }
+
+ .nav__label, .nav__input{
+     
+      display: none;
+ }
+
+ .nav__logo{
+    text-transform: uppercase;
+     font-size: 1rem;
+     font-weight: 300;
+     margin: 10px;
+     &:hover{
+    color: rgb(89, 216, 248);
+     }
+ 
+     
+         }
+img{
+ width: 100%;
+ height: 40px;
+ margin: 0;
+
+}
+ .nav__menu{
+    
+     display: grid;
+     grid-auto-flow: column;
+     gap: 1em;
+     margin: 0;
+     
+ }
+
+ .nav__link{
+     color:black;
+     text-decoration: none;
+   
+   
+     &:hover{
+         color: rgb(89, 216, 248);
+         
+     }
+ }
+ }

@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+    nav{
+        .nav__label{ 
+      
+      display: block;
+      cursor: pointer;
+    
+    }
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+
+
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+        background-color:$colortex-general ;
+
+        
+    }
+    }
+    main{
+      #temporada{
+
+        grid-template-columns: repeat(2, 2fr);
+
+        grid-auto-rows: 50%;
+
+        h4{
+          font-size: 18px;
+
+        }
+      
+        p{
+          
+          font-size: 15px;
+        }
+
+      }
+     
+      
+
+    
+  }
+#servicios{  
+  .contenedor-servicios{
+    flex-direction: column;
+
+    div{
+      border: none;
+    }
+  }
+}
+  }
+
+  
