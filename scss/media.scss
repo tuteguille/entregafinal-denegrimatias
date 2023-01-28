@@ -48,19 +48,35 @@
 
       }
      
+      .contenedor_principal{ 
+        .contenedor_slide{
+        
+          width: 50;
+          height: 50vh;
+          margin: 0;
+          overflow: hidden;
+        
+        
+          }
+          h2{
+            color:rgb(89, 216, 248) ;
+            padding: 5px;
+          }
+        } 
+      }
+
+      #servicios{  
+        .contenedor-servicios{
+          flex-direction: column;
       
-
-    
-  }
-#servicios{  
-  .contenedor-servicios{
-    flex-direction: column;
-
-    div{
-      border: none;
-    }
-  }
-}
+          div{
+            border: none;
+          }
+        }
+      
+      }
+      
   }
 
-  
+
+ 

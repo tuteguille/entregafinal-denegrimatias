@@ -200,6 +200,14 @@ nav {
       font-size: 18px; }
     main #temporada p {
       font-size: 15px; }
+  main .contenedor_principal .contenedor_slide {
+    width: 50;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden; }
+  main .contenedor_principal h2 {
+    color: #59d8f8;
+    padding: 5px; }
   #servicios .contenedor-servicios {
     flex-direction: column; }
     #servicios .contenedor-servicios div {
