@@ -80,14 +80,11 @@ main .contenedor_slide {
   padding: 0px 50px;
   background-color: #59d8f8; }
   #servicios .contenedor-servicios {
-    padding: 0px 50px;
+    padding: 50px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
     text-align: center; }
     #servicios .contenedor-servicios i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       cursor: pointer; }
       #servicios .contenedor-servicios i:hover {
         color: white; }
@@ -102,14 +99,6 @@ main .contenedor_slide {
       font-size: 15px;
       font-weight: 150;
       margin: 10px 0px; }
-  #servicios .boton-contactanos {
-    text-decoration: none;
-    padding: 0px 60px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 10px;
-    color: white; }
 
 @keyframes cambio {
   0% {
