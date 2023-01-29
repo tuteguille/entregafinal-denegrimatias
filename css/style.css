@@ -24,7 +24,7 @@ main {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    color: gray; }
+    color: #707070d5; }
   main .contenedor_slide {
     width: 100;
     height: 80vh;
@@ -44,26 +44,26 @@ main {
       height: 100%; }
     main .contenedor_slide h2 {
       text-align: center;
-      color: grey; }
+      color: #707070d5; }
   main #temporada {
-    padding: 50px 50px;
+    padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center; }
     main #temporada img {
       height: 30VH;
-      width: 30vh;
+      width: 20vh;
       border-radius: 40%; }
     main #temporada div {
-      padding: 20px 20px; }
+      padding: 5px 10px; }
     main #temporada h4 {
       color: #59d8f8;
       padding: 10px;
       font-size: 20px; }
     main #temporada p {
       font-size: 16px;
-      color: grey; }
+      color: #707070d5; }
     main #temporada .boton-temporada {
       display: inline-block;
       text-decoration: none;
@@ -92,7 +92,7 @@ main {
       main #servicios .contenedor-servicios div {
         flex: 1;
         margin: 20px 0px;
-        border-right: 2px solid grey; }
+        border-right: 2px solid #55595a; }
       main #servicios .contenedor-servicios #icono-atencion {
         border: none; }
       main #servicios .contenedor-servicios h6 {
@@ -113,7 +113,7 @@ main {
     font-size: 3em;
     padding: 15px; }
   main .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+    box-shadow: 0 0 20px 0 #55595a; }
   main .contact-wrapper > * {
     padding: 1em; }
   main .contact-form {
@@ -139,7 +139,7 @@ main {
     color: #030303;
     border-bottom: 1px solid #59d8f8; }
   main .contact-form form button {
-    background: #616060;
+    background: #55595a;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -197,13 +197,13 @@ main {
     main #comprar button {
       width: 900%;
       height: 40px;
-      color: red;
-      background-color: grey;
+      color: #59d8f8;
+      background-color: #55595a;
       border-radius: 20px;
       font-size: 15px; }
       main #comprar button:hover {
-        color: white;
-        background-color: aqua; }
+        color: #11121b;
+        background-color: #59d8f8; }
   main .maps {
     display: flex;
     justify-content: center;

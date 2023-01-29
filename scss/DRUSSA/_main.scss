@@ -9,7 +9,7 @@ main{
         justify-content: center;
         text-align: center;
         padding: 20px;
-        color: gray;
+        color:$background-texto;
       
     }
     
@@ -43,7 +43,7 @@ main{
       
       h2{
         text-align: center;
-        color: grey;
+        color:$background-texto;
       }
     }
 
@@ -51,38 +51,38 @@ main{
    
     //TEMPORADA
 #temporada{
-    padding: 50px 50px;
+    padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center;
 img{
    height: 30VH;
-    width: 30vh;
+    width: 20vh;
     border-radius: 40%;
 
 }
 
 div{
-padding: 20px 20px;
+padding: 5px 10px;
 }
 
 h4{
-    color: rgb(89, 216, 248);
+    color: $color-fondo;
     padding: 10px;
     font-size: 20px;
 }
 
 p{
     font-size: 16px;
-    color: grey;
+    color:$background-texto;
 }
 .boton-temporada{
     display: inline-block;
     text-decoration: none;
     color: black;
     padding: 10px 30px;
-    border: 2px solid rgb(89, 216, 248);
+    border: 2px solid $color-fondo;
     border-radius: 30px;
     margin-top: 20px;
     cursor: pointer;
@@ -90,7 +90,7 @@ p{
 
     &:hover{
         background-color: rgba(4, 4, 4, 0.734);
-        color: rgb(89, 216, 248);
+        color: $color-fondo;
     }
 }
 
@@ -114,24 +114,21 @@ p{
        i{
         cursor: pointer;
         &:hover{
-            color:rgb(89, 216, 248);
+            color:$color-fondo;
         }
        }
 
         div{
             flex: 1;
             margin: 20px 0px;
-            border-right: 2px solid grey;
+            border-right: 2px solid $colortex-general;
         }
 
         #icono-atencion{
             border: none;
         }
         h6{
-            color: grey;
-            font-size: 15px;
-            font-weight: 150;
-            margin: 10px 0px;
+  @include texto-servicios;
         }
         
     }
@@ -160,7 +157,7 @@ ul {
 
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    box-shadow: 0 0 20px 0 $colortex-general;
 }
 
 .contact-wrapper > * {
@@ -198,11 +195,11 @@ ul {
     background: none;
     outline: 0;
     color: rgb(3, 3, 3);
-    border-bottom: 1px solid rgb(89, 216, 248);
+    border-bottom: 1px solid $color-fondo;
 }
 
 .contact-form form button {
-    background: rgb(97, 96, 96);
+    background: $colortex-general;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -212,7 +209,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: rgb(89, 216, 248);
+    background: $color-fondo;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
@@ -299,14 +296,14 @@ section{
     button{
         width: 900%;
         height: 40px;
-        color: red;
+        color: $color-fondo;
         
-        background-color: grey;
+        background-color:$colortex-general;
         border-radius: 20px;
         font-size: 15px;
         &:hover{
-            color: white;
-            background-color: aqua;
+            color:$colortex-parrafo;
+            background-color: $color-fondo;
         }
     }
 }
