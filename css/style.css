@@ -196,8 +196,9 @@ main {
     justify-content: center; }
     main #comprar button {
       width: 900%;
-      height: 40px;
+      height: 50px;
       color: #59d8f8;
+      padding: 10px;
       background-color: #55595a;
       border-radius: 20px;
       font-size: 15px; }
