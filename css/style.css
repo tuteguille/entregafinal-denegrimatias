@@ -191,12 +191,12 @@ main {
     object-fit: cover;
     border-radius: 30px; }
   main #comprar {
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: center; }
     main #comprar button {
-      width: 900%;
-      height: 50px;
+      width: 800%;
+      height: 40px;
       color: #59d8f8;
       padding: 10px;
       background-color: #55595a;
