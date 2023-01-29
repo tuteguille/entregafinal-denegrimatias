@@ -16,89 +16,198 @@ main .contenedore_principal h3 {
   text-align: center;
   color: grey; }
 
-main h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: gray; }
-
-main .contenedor_slide {
-  width: 100;
-  height: 80vh;
-  margin: 0;
-  overflow: hidden; }
-  main .contenedor_slide ul {
+main {
+  background-image: url(/src/img/fondobody.jpeg);
+  /* CONTACT INFO */ }
+  main h2 {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 15s infinite;
-    animation-direction: alternate; }
-  main .contenedor_slide li {
-    width: 200%;
-    list-style: none; }
-  main .contenedor_slide img {
-    width: 100%;
-    height: 100%; }
-  main .contenedor_slide h2 {
+    justify-content: center;
     text-align: center;
-    color: grey; }
-
-#temporada {
-  padding: 50px 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  text-align: center; }
-  #temporada img {
-    border-radius: 100%;
-    width: 100px; }
-  #temporada div {
-    padding: 20px 20px; }
-  #temporada h4 {
-    color: #59d8f8;
-    padding: 10px;
-    font-size: 20px; }
-  #temporada p {
-    font-size: 16px;
-    color: grey; }
-  #temporada .boton-temporada {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 10px 30px;
-    border: 2px solid #59d8f8;
-    border-radius: 30px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.3s; }
-    #temporada .boton-temporada:hover {
-      background-color: rgba(26, 24, 24, 0.052);
-      color: #59d8f8; }
-
-#servicios {
-  padding: 0px 50px;
-  background-color: #59d8f8; }
-  #servicios .contenedor-servicios {
-    padding: 50px 50px 0px 50px;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px;
+    color: gray; }
+  main .contenedor_slide {
+    width: 100;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden; }
+    main .contenedor_slide ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: cambio 15s infinite;
+      animation-direction: alternate; }
+    main .contenedor_slide li {
+      width: 200%;
+      list-style: none; }
+    main .contenedor_slide img {
+      width: 100%;
+      height: 100%; }
+    main .contenedor_slide h2 {
+      text-align: center;
+      color: grey; }
+  main #temporada {
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     text-align: center; }
-    #servicios .contenedor-servicios i {
-      cursor: pointer; }
-      #servicios .contenedor-servicios i:hover {
-        color: white; }
-    #servicios .contenedor-servicios div {
-      flex: 1;
-      margin: 20px 0px;
-      border-right: 2px solid grey; }
-    #servicios .contenedor-servicios #icono-atencion {
-      border: none; }
-    #servicios .contenedor-servicios h6 {
-      color: grey;
-      font-size: 15px;
-      font-weight: 150;
-      margin: 10px 0px; }
+    main #temporada img {
+      height: 40VH;
+      width: 30vh;
+      border-radius: 40%; }
+    main #temporada div {
+      padding: 20px 20px; }
+    main #temporada h4 {
+      color: #59d8f8;
+      padding: 10px;
+      font-size: 20px; }
+    main #temporada p {
+      font-size: 16px;
+      color: grey; }
+    main #temporada .boton-temporada {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      padding: 10px 30px;
+      border: 2px solid #59d8f8;
+      border-radius: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 0.3s; }
+      main #temporada .boton-temporada:hover {
+        background-color: rgba(4, 4, 4, 0.734);
+        color: #59d8f8; }
+  main #servicios {
+    padding: 10px 50px;
+    background-color: rgba(106, 100, 100, 0.392); }
+    main #servicios .contenedor-servicios {
+      padding: 50px 50px 0px 50px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center; }
+      main #servicios .contenedor-servicios i {
+        cursor: pointer; }
+        main #servicios .contenedor-servicios i:hover {
+          color: #59d8f8; }
+      main #servicios .contenedor-servicios div {
+        flex: 1;
+        margin: 20px 0px;
+        border-right: 2px solid grey; }
+      main #servicios .contenedor-servicios #icono-atencion {
+        border: none; }
+      main #servicios .contenedor-servicios h6 {
+        color: grey;
+        font-size: 15px;
+        font-weight: 150;
+        margin: 10px 0px; }
+  main .contenedorform {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em; }
+  main ul {
+    list-style: none;
+    padding: 0; }
+  main .logo_form {
+    text-align: center;
+    font-size: 3em;
+    padding: 15px; }
+  main .contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+  main .contact-wrapper > * {
+    padding: 1em; }
+  main .contact-form {
+    background: #22222220; }
+  main .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  main .contact-form form label {
+    display: block; }
+  main .contact-form form p {
+    margin: 0;
+    padding: 1em; }
+  main .contact-form form .block {
+    grid-column: 1 / 3; }
+  main .contact-form form button,
+  main .contact-form form input,
+  main .contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #030303;
+    border-bottom: 1px solid #59d8f8; }
+  main .contact-form form button {
+    background: #616060;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer; }
+  main .contact-form form button:hover,
+  main .contact-form form button:focus {
+    background: #59d8f8;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0; }
+  main .contact-info {
+    background: rgba(118, 113, 113, 0.412); }
+  main .contact-info h4, main .contact-info ul, main .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  main .contenedor-nosotros {
+    display: block;
+    justify-content: center;
+    align-items: center; }
+    main .contenedor-nosotros .parrafo-nosotos {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+  main section .imgnosotro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px; }
+    main section .imgnosotro img {
+      height: 50vh;
+      border-radius: 20%; }
+  main .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 100%;
+    padding: 10px;
+    grid-gap: 10px; }
+  main .gallery__mujer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main .gallery__1 {
+    margin: 10px;
+    padding: 30px; }
+  main .gallery__hombre {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; }
+  main #comprar {
+    padding: 30px;
+    display: flex;
+    justify-content: center; }
+    main #comprar button {
+      width: 900%;
+      height: 40px;
+      color: red;
+      background-color: grey;
+      border-radius: 20px;
+      font-size: 15px; }
+      main #comprar button:hover {
+        color: white;
+        background-color: aqua; }
+  main .maps {
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
 
 @keyframes cambio {
   0% {
@@ -119,8 +228,8 @@ main .contenedor_slide {
     margin-left: -300%; } }
 
 footer {
-  background-color: rgba(104, 101, 101, 0.449);
-  color: #0f0f0f; }
+  background-color: #383737;
+  color: #c0b7b7; }
   footer p {
     display: flex;
     justify-content: end;
@@ -139,10 +248,11 @@ footer {
         border-radius: 10px; }
 
 nav {
+  background-color: #383737;
   width: 100%;
   height: 14vh;
   margin: 0;
-  color: black;
+  color: #c0b7b7;
   box-sizing: 0; }
   nav .nav__container {
     display: flex;
@@ -169,7 +279,7 @@ nav {
     gap: 1em;
     margin: 0; }
   nav .nav__link {
-    color: black;
+    color: #c0b7b7;
     text-decoration: none; }
     nav .nav__link:hover {
       color: #59d8f8; }
@@ -208,7 +318,18 @@ nav {
   main .contenedor_principal h2 {
     color: #59d8f8;
     padding: 5px; }
-  #servicios .contenedor-servicios {
+  main #servicios .contenedor-servicios {
     flex-direction: column; }
-    #servicios .contenedor-servicios div {
-      border: none; } }
+    main #servicios .contenedor-servicios div {
+      border: none; }
+  main .gallery-container {
+    grid-template-columns: repeat(2, 4fr);
+    grid-auto-rows: 50%; }
+  main .gallery__hombre {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main .gallery__mujer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }

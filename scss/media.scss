@@ -63,19 +63,51 @@
             padding: 5px;
           }
         } 
-      }
 
-      #servicios{  
-        .contenedor-servicios{
-          flex-direction: column;
-      
-          div{
-            border: none;
+        #servicios{  
+          .contenedor-servicios{
+            flex-direction: column;
+        
+            div{
+              border:none;
+            }
           }
+        
         }
-      
+
+
       }
       
+      
+   main{ .gallery-container{
+   
+    
+
+        grid-template-columns: repeat(2, 4fr);
+        
+            grid-auto-rows: 50%;
+        
+            }
+        
+            .gallery__hombre{
+        
+              width: 100%;
+        
+              height: 100%;
+        
+              object-fit: cover;
+        
+          }
+          .gallery__mujer{
+        
+              width: 100%;
+        
+              height: 100%;
+        
+              object-fit: cover;
+        
+          }
+        } 
   }
 
 
